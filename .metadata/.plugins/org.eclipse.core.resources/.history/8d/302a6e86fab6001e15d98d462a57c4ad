@@ -1,0 +1,24 @@
+package org.generation.exercises;
+
+import java.util.ArrayList;
+
+/*
+ * Programa que permite que un usuario agregue nombre y apellido de estudiantes matriculados en una universidad. Posteriormente, muestra la lista de los estudiantes agregados.
+ *  -- Requerimentos:
+ *  	> Utilizar ArrayList
+ *  	> Scanner para interactuar con el usuario
+ *  	> Loop para permitir que se agreguen varios estudiantes (do-while)
+ *  	> Opción para salir del loop con la palabra 'Salir' (if-else, try-catch, ≠, switch son posibles opciones) 
+ *  	> Mostrar lista de estudiantes (for-each)  
+ */
+public class SistemaEscolar {
+	public static void main(String[] args) {
+		//Inicializar un ArrayList para guardar a los estudiantes
+		ArrayList<String> estudiantes = new ArrayList<String>();
+		
+		estudiantes.add("Rene Gomez");
+		System.out.println(estudiantes);
+		
+	}
+
+}

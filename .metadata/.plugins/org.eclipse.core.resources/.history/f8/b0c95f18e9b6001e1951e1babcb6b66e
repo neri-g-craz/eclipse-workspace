@@ -1,0 +1,22 @@
+package org.generation.collections;
+
+import java.util.Arrays;
+
+public class ArrayListCollections {
+
+	public static void main(String[] args) {
+		//***************** Arrays *************//
+		String [] arraycito = {"cosa", "coso", "thing", "thisThing"};
+		//Imprimiendo arrays
+		System.out.println(Arrays.toString(arraycito));
+		String[] tamanios = {"chico", "mediano", "grande", "extragrande"};
+		System.out.println(Arrays.toString(tamanios));
+		
+		//Acceder acada elemento del Array
+		String arraycito1 = arraycito[0];
+		System.out.println("El primer articulo de la lista es: " + arraycito1);
+		String tamanio1 = tamanios[2];
+		System.out.println("Eltamaño de " + arraycito1 + " es " + tamanio1 );
+	}
+
+}

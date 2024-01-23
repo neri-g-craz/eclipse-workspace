@@ -1,0 +1,72 @@
+package org.generation.collections;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class ArrayListCollections {
+
+	public static void main(String[] args) {
+		//***************** Arrays *************//
+		String [] arraycito = {"cosa", "coso", "thing", "thisThing"};
+		//Imprimiendo arrays
+		System.out.println(Arrays.toString(arraycito));
+		String[] tamanios = {"chico", "mediano", "grande", "extragrande"};
+		System.out.println(Arrays.toString(tamanios));
+		
+		//Acceder acada elemento del Array
+		String arraycito1 = arraycito[0];
+		System.out.println("El primer articulo de la lista es: " + arraycito1);
+		String tamanio1 = tamanios[2];
+		System.out.println("El tamaño de " + arraycito1 + " es " + tamanio1 );
+		
+		//Obtener la longitud del array
+		int longitudArraycito = arraycito.length;
+		System.out.println("El array 'arraycito' tiene " + longitudArraycito + " elementos"); 
+		
+		//Obtener el último elemento
+		//String ultimoElemento = arraycito[longitudArraycito -1]; //La longitud ya vive en la variable 'longitudArraycito'.
+		String ultimoElemento = arraycito[arraycito.length - 1];
+		System.out.println("El ultimo elemento del Array arraycito es " + ultimoElemento); //thisThing
+		
+		//Mostrar cada elemento utilizando forEach
+		for (String elemento : arraycito) {
+			System.out.println(elemento);
+		}
+		
+		//************ ArrayList ************//
+		//ArrayList es un array que puede cambiar de tamaño. Es la clase de Java que representa la estructura de datos de Arrays. Permite elementos duplicados y recibe varios métodos para su manipulación
+		ArrayList<String> films = new ArrayList<String>();
+		ArrayList<Integer> matricula = new ArrayList<>(); //Wraper class
+		
+		//Agregar elementos
+		films.add("Atonement");
+		films.add("Irreversible");
+		films.add("Interstellar");
+		films.add("Good Will Hunting");
+		films.add("Princess Mononoke");
+		films.add("The departed");
+		
+		System.out.println(films);
+		
+		//Obtener un elemento: name.get(index);
+		String film1 = films.get(0);
+		System.out.println("La primer película es: " + film1);
+		
+		//Modificar un elemento: name.set(index, newValue)
+		String film4 = films.set(4, "La Haine");
+		String film3Get = films.get(4);		
+		System.out.println(film3Get);
+		
+		//Conocer el tamaño de ArrayList: name.size();
+		int sizeFilms = films.size();
+		System.out.println("El tamaño del ArrayList films es de " + sizeFilms + " elementos");
+		
+		//Agregar un elemento y después eliminarlo: name.remove(index);
+		films.add("The fountain");
+		System.out.println(films);
+		
+		films.remove(7);
+		System.out.println(films);
+	}
+
+}

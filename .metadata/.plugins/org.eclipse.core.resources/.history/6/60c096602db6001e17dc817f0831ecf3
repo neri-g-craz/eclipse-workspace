@@ -1,0 +1,13 @@
+package ecommerce;
+
+import java.util.Scanner;
+public class FunciónDescuento {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Ingrese el costo del producto");//Obtener el precio del producto
+		double precioProducto = scanner.nextDouble();
+	}
+
+}

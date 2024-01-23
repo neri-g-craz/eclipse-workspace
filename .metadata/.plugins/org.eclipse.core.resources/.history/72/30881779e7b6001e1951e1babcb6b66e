@@ -1,0 +1,11 @@
+package org.generation.collections;
+
+public class ArrayListCollections {
+
+	public static void main(String[] args) {
+		//***************** Arrays *************//
+		String [] arraycito = {"cosa", "coso", "thing", "thisThing"};
+		System.out.println(names);
+	}
+
+}
